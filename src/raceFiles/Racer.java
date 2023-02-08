@@ -10,8 +10,10 @@ import java.util.Random;
  *
  */
 public class Racer {
-	private String name;
-	double distanceCoveredInMeters = 0.0,
+	//allows subclasses direct access to instance variables/
+	
+	protected String name;
+	protected double distanceCoveredInMeters = 0.0,
 	minSpeedInMetersPerSecond,
 	maxSpeedInMetersPerSecon;
 	
@@ -49,9 +51,12 @@ public class Racer {
 		double speed = diff + this.minSpeedInMetersPerSecond;
 		this.distanceCoveredInMeters += (speed*timeIntervalSeconds);
 	}
-	
 	@Override
 	public String toString() {
-		return name;
+		return "Racer [name=" + name + "]";
 	}
+	
+	
+	
+
 }
