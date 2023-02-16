@@ -25,7 +25,8 @@ public class Tortoise extends Racer {
 	public String toString() {
 		return "Tortoise";
 	}
-	
+
+	@Override
 	public void run(double timeIntervalSeconds) {
 		//calculate random fraction
 		System.out.println("Tortoise is walking...");
@@ -36,6 +37,8 @@ public class Tortoise extends Racer {
 		double speed = diff + this.minSpeedInMetersPerSecond;
 		this.distanceCoveredInMeters += (speed*timeIntervalSeconds);
 	}
+	
+	
 	
 	
 	
