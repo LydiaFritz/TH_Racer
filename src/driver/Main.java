@@ -17,6 +17,7 @@ import studentFiles.FastWalker;
 import studentFiles.Godzilla;
 import studentFiles.MarioKart;
 import studentFiles.Penguin;
+import studentFiles.PetRock;
 
 /**
  * @author a4432_asu
@@ -49,6 +50,8 @@ public class Main {
 
 	private static void signUpRacers(Race r) {
 		Racer newRacer = new Tortoise("Timmy");
+		r.signUpRacer(newRacer);
+		newRacer = new PetRock("Stoney", 5,6);
 		r.signUpRacer(newRacer);
 		newRacer = new Hare("Bugsy");
 		r.signUpRacer(newRacer);
